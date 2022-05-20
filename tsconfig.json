@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    // 编译输出目标 ES 版本
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    // 采用的模块系统
+    "module": "esnext",
+    // 如何处理模块
+    "moduleResolution": "node",
+    // 以严格模式解析
+    "strict": true,
+    "jsx": "preserve",
+    // 是否包含可以用于 debug 的 sourceMap
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    // 忽略 this 的类型检查
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    // 定义一个变量就必须给它一个初始值
+    "strictPropertyInitialization" : false,
+    // 解析非相对模块名的基准目录
+    "baseUrl": ".",
+    // 指定特殊模块的路径
+    "paths": {
+      "@/*": ["src/*"],
+    },
+    // 编译过程中需要引入的库文件的列表
+    "lib": ["esnext", "dom"]
+  },
+  // ts 管理的文件
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  // ts 排除的文件
+  "exclude": ["node_modules"]
+}

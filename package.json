@@ -1,12 +1,36 @@
 {
-  "name": "my-vue-cli",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "sdtentry",
+  "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit --skipLibCheck && vite build",
+    "serve": "vite preview",
+    "lint": "eslint src"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "ant-design-vue": "^2.2.8",
+    "axios": "^0.24.0",
+    "element-plus": "^2.2.0",
+    "postcss": "^8.3.11",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.4",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.20.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.4",
+    "vue-tsc": "^0.3.0"
+  }
 }
