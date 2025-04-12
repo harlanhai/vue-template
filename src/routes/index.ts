@@ -4,14 +4,13 @@
  */
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Layout from '@/layout/Index.vue';
-import Login from '@/views/login/Index.vue';
 
 const routes: RouteRecordRaw[] = [
-  {
-    path: '/login',
-    name: 'login',
-    component: Login,
-  },
+  // {
+  //   path: '/login',
+  //   name: 'login',
+  //   component: Login,
+  // },
   {
     path: '/',
     component: Layout,
@@ -19,7 +18,7 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         path: 'dashboard',
-        component: () => import(/* webpackChunkName: "dashboard" */ '@/views/dashboard/Index.vue'),
+        component: () => import('@/views/dashboard/Index.vue'),
         name: 'Dashboard',
         meta: {
           title: 'dashboard',
